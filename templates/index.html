@@ -16,13 +16,20 @@
             font-family: 'Inter', sans-serif;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 24px;
-            padding: 48px 16px;
+            gap: 28px;
+            padding: 48px 32px;
             background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             overflow-x: hidden;
+        }
+
+        @media (max-width: 900px) {
+            body {
+                flex-direction: column;
+                padding: 48px 16px;
+            }
         }
 
         /* Animated background orbs */
@@ -63,14 +70,17 @@
             -webkit-backdrop-filter: blur(24px);
             border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 24px;
-            padding: 56px 64px;
-            max-width: 520px;
-            width: 90%;
+            padding: 56px 48px;
+            max-width: 480px;
+            width: 100%;
             text-align: center;
             box-shadow:
                 0 8px 32px rgba(0, 0, 0, 0.4),
                 inset 0 1px 0 rgba(255, 255, 255, 0.15);
             animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         @keyframes rise {
@@ -204,9 +214,12 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 24px;
             padding: 36px 48px;
-            max-width: 520px;
-            width: 90%;
+            max-width: 480px;
+            width: 100%;
             animation: rise 0.9s 0.15s cubic-bezier(0.22, 1, 0.36, 1) both;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .builder-header {
