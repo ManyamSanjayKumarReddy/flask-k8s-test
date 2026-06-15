@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Deployment
 
 metadata:
-  name: flask-demo-app
+  name: flask-demo-applcation
   namespace: demo
 
 spec:
