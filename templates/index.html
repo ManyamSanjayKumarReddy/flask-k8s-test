@@ -322,9 +322,33 @@
             margin-top: 2px;
             color: #a89fff;
         }
+
+        .top-logo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 12px 28px;
+            background: rgba(15, 12, 41, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .top-logo img {
+            height: 36px;
+            width: auto;
+        }
     </style>
 </head>
 <body>
+    <header class="top-logo">
+        <img src="/static/SSLOGsO.png" alt="SS Logo">
+    </header>
+
     <div class="card">
         <div class="badge">Live on Orch</div>
 
